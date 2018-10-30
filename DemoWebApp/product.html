@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="css/mystyle.css" />
+<link rel="stylesheet" href="css/jquery.rateyo.css" />
+<link href="css/jquery.easy_slides.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/media.css" />
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/myjquery.js"></script>
+<script src="js/myscript.js"></script>
+<script src="js/jquery.rateyo.js"></script>
+<script src="js/jquery.gotop.js"></script>
+<script src="js/jquery.easy_slides.js"></script>
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-1">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle"
+									data-toggle="collapse" data-target="#myNavbar">
+									<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+										class="icon-bar"></span>
+								</button>
+								<div class="logo-image">
+									<img src="images\logo.svg">
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-5 ">
+							<div class="main-menu">
+								<div class="collapse navbar-collapse" id="myNavbar">
+									<ul class="nav navbar-nav">
+
+										<li><a href="#">HOME</a></li>
+										<li><div class="dropdown">
+												<a href="#">MEN</a>
+												<div class="dropdown-content">
+													<ul>
+														<li><a href="#">Jeans</a></li>
+														<li><a href="#">Shirts</a></li>
+														<li><a href="#">T-shirts</a></li>
+														<li><a href="#">Chinos</a></li>
+														<li><a href="#">Blazers</a></li>
+														<li><a href="#">Night Wear</a></li>
+													</ul>
+												</div>
+											</div></li>
+										<li><a href="#">WOMEN</a></li>
+										<li><a href="#">KIDS</a></li>
+										<li><a href="#">ACCESSORIES</a></li>
+									</ul>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="side-menu">
+								<div class="col-sm-12">
+									<ul class="nav navbar-nav navbar-right">
+										<div class="list-inline">
+											<li class="list-inline-item"><a id="menu-login"
+												data-toggle="modal" href="#"
+												data-target=".bs-example-modal-sm">Login </a></li>
+											<li class="list-inline-item">
+												<div id="menu-cart" class="menu-cart">
+													<a href="#dLabel" data-toggle="dropdown"
+														aria-haspopup="true"><div class="sprite-cart"></div></a>
+
+													<ul class="dropdown-menu" aria-labelledby="dLabel">
+														Recently added item(s)
+														<li>
+															<div class="row">
+																<div class="col-xs-3">
+																	<img src="images\new-thumb-01.jpg">
+																</div>
+																<div class="col-xs-7">
+																	U.S. Polo Assn. Full Sleeve Plain T-shirts<br>
+																	<div class="amount">$120.00</div>
+																	<small>Qty:1<br>Size:Medium/Large
+																	</small>
+																</div>
+																<div class="col-xs-1">
+																	<div class="edit-svg">
+																		<img src="images\edit.svg" />
+																	</div>
+																</div>
+																<div class="col-xs-1">
+																	<div class="cross-svg">
+																		<img src="images\cross.svg" />
+																	</div>
+																</div>
+															</div>
+														</li>
+
+														<li>
+															<div class="row">
+																<div class="col-xs-3">
+																	<img src="images\new-thumb-02.jpg">
+																</div>
+																<div class="col-xs-7">
+																	U.S. Polo Assn. Full Sleeve Plain T-shirts<br>
+																	<div class="amount">$120.00</div>
+																	<small>Qty:1<br>Size:Medium/Large
+																	</small>
+																</div>
+																<div class="col-xs-1">
+																	<div class="edit-svg">
+																		<img src="images\edit.svg" />
+																	</div>
+																</div>
+																<div class="col-xs-1">
+																	<div class="cross-svg">
+																		<img src="images\cross.svg" />
+																	</div>
+																</div>
+															</div>
+														</li>
+														<li><div class="col-xs-6">Cart Subtotal:</div>
+															<div class="col-xs-6">
+																<div class="amount">$168.00</div>
+															</div></li>
+														<li><div class="buttons">
+																<button type="submit" class="btn btn-danger">View
+																	Cart</button>
+															</div></li>
+													</ul>
+												</div>
+											</li>
+											<li class="list-inline-item"><div class="menu-search">
+													<a href="#"><input type="search" id="search">
+														<div class="search-image"></div></a>
+												</div></li>
+										</div>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="top">
+					<div class="container">
+						<h2>Men</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<nav aria-label="breadcrumb" class="breadcrumb_bgcolor">
+		<ol class="breadcrumb container">
+			<li class="breadcrumb-item"><a href="#" class="breadcrumb_color">Home</a></li>
+			<li class="breadcrumb-item"><a href="#" class="breadcrumb_color">Men</a></li>
+			<li class="breadcrumb-item active" aria-current="page">T-shirts</li>
+		</ol>
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3 col-xs-12">
+				<div class="filterby">
+					<div class="filter-head">
+						<div class="col-xs-12">
+							<h4>FILTER BY</h4>
+						</div>
+					</div>
+					<div class="col-xs-12">
+						<div class="col-md-10 col-sm-9 col-xs-10">CATEGORIES</div>
+						<div class="col-md-2 col-sm-3 col-xs-2">
+							<a role="button" data-toggle="collapse" href="#collapseExample"
+								aria-expanded="false" aria-controls="collapseExample">
+								<div class="sprite-collapse"></div>
+							</a>
+						</div>
+						<div class="col-xs-12">
+							<div class="collapse" id="collapseExample">
+								<div class="well">
+									<div class="checkbox">
+										<label><input type="checkbox" value="">T-shirts(25275)</label>
+									</div>
+									<div class="checkbox">
+										<label><input type="checkbox" value="">Shirts(24866)</label>
+									</div>
+									<div class="checkbox">
+										<label><input type="checkbox" value="">Jackets(5326)</label>
+									</div>
+									<div class="checkbox">
+										<label><input type="checkbox" value="">Sweaters(4871)</label>
+									</div>
+									<div class="checkbox">
+										<label><input type="checkbox" value="">Sweatshirts(4533)</label>
+									</div>
+									<div class="checkbox">
+										<label><input type="checkbox" value="">Kurtas(1566)</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12">
+						<div class="col-md-10 col-sm-9 col-xs-10">COLOR</div>
+						<div class="col-md-2 col-sm-3 col-xs-2">
+							<a role="button" data-toggle="collapse" href="#collapseExample1"
+								aria-expanded="false" aria-controls="collapseExample">
+								<div class="sprite-collapse"></div>
+							</a>
+						</div>
+						<div class="col-xs-12">
+							<div class="collapse" id="collapseExample1">
+								<div class="well">
+									<div class="row">
+										<div class="col-xs-3">
+											<div class="color-magenta"></div>
+										</div>
+										<div class="col-xs-9">Magenta</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-3">
+											<div class="color-pink"></div>
+										</div>
+										<div class="col-xs-9">Pink</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-3">
+											<div class="color-red"></div>
+										</div>
+										<div class="col-xs-9">Red</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-3">
+											<div class="color-lavender"></div>
+										</div>
+										<div class="col-xs-9">Lavender</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-3">
+											<div class="color-navy"></div>
+										</div>
+										<div class="col-xs-9">Navy</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-3">
+											<div class="color-blue"></div>
+										</div>
+										<div class="col-xs-9">Blue</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-3">
+											<div class="color-grey"></div>
+										</div>
+										<div class="col-xs-9">Grey</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-3">
+											<div class="color-teal"></div>
+										</div>
+										<div class="col-xs-9">Teal</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-3">
+											<div class="color-peach"></div>
+										</div>
+										<div class="col-xs-9">Peach</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-3">
+											<div class="color-orange"></div>
+										</div>
+										<div class="col-xs-9">Orange</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12">
+						<div class="col-md-10 col-sm-9 col-xs-10">PRICE</div>
+						<div class="col-md-2 col-sm-3 col-xs-2">
+							<a role="button" data-toggle="collapse" href="#collapseExample2"
+								aria-expanded="false" aria-controls="collapseExample">
+								<div class="sprite-collapse"></div>
+							</a>
+						</div>
+						<div class="col-xs-12">
+							<div class="collapse" id="collapseExample2">
+								<div class="well">
+									<div class="col-xs-12">
+										<img src="images\price.jpg" />
+									</div>
+									<div class="col-xs-6">
+										<p>Rs. 174</p>
+									</div>
+									<div class="col-xs-6">
+										<p>Rs. 8,999</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12">
+						<div class="col-md-10 col-sm-9 col-xs-10">SIZE</div>
+						<div class="col-md-2 col-sm-3 col-xs-2">
+							<a role="button" data-toggle="collapse" href="#collapseExample3"
+								aria-expanded="false" aria-controls="collapseExample">
+								<div class="sprite-collapse"></div>
+							</a>
+						</div>
+						<div class="col-xs-12">
+							<div class="collapse" id="collapseExample3">
+								<div class="well">
+									<div class="checkbox">
+										<label><input type="checkbox" value="">XXS(81)</label>
+									</div>
+									<div class="checkbox">
+										<label><input type="checkbox" value="">XS(1446)</label>
+									</div>
+									<div class="checkbox">
+										<label><input type="checkbox" value="">S(24706)</label>
+									</div>
+									<div class="checkbox">
+										<label><input type="checkbox" value="">M(29467)</label>
+									</div>
+									<div class="checkbox">
+										<label><input type="checkbox" value="">L(29516)</label>
+									</div>
+									<div class="checkbox">
+										<label><input type="checkbox" value="">XL(27823)</label>
+									</div>
+									<div class="checkbox">
+										<label><input type="checkbox" value="">XXL(16841)</label>
+									</div>
+									<div class="checkbox">
+										<label><input type="checkbox" value="">XXXL(43)</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="image-links">
+					<div class="col-xs-12">
+						<a href=""><img src="images\promo2.jpg" /></a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-9 col-xs-12">
+
+				<div class="product-images">
+					<div class="row">
+						<div class="col-xs-12">
+							<h3>Men T-Shirts</h3>
+						</div>
+						<div class="col-xs-12">
+							<div class="sort-by">
+								<form class="form-inline">
+									Sort by <select class="form-control" id="sort-by">
+										<option>position</option>
+										<option>price</option>
+									</select>
+								</form>
+							</div>
+						</div>
+
+						<div class="col-sm-4 col-xs-12">
+							<a href=""><img src="images\new-thumb-01-big.jpg" /></a>
+							<div class="info">
+								U.S. Polo Assn. Full Sleeve Plain T-shirts for Men
+								<div class="break">
+									<br>
+								</div>
+								<div class="amount">$120.00</div>
+							</div>
+							<div class="break">
+								<br>
+							</div>
+						</div>
+
+						<div class="col-sm-4 col-xs-12">
+							<a href=""><img src="images\new-thumb-02-big.jpg" /></a>
+							<div class="info">
+								U.S. Polo Assn. Full Sleeve Plain T-shirts for Men
+								<div class="break">
+									<br>
+								</div>
+								<div class="amount">$120.00</div>
+							</div>
+							<div class="break">
+								<br>
+							</div>
+						</div>
+
+						<div class="col-sm-4 col-xs-12">
+							<a href=""><img src="images\new-thumb-01-big.jpg"></a>
+							<div class="info">
+								U.S. Polo Assn. Full Sleeve Plain T-shirts for Men
+								<div class="break">
+									<br>
+								</div>
+								<div class="amount">$120.00</div>
+							</div>
+							<div class="break">
+								<br>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4 col-xs-12">
+							<a href=""><img src="images\new-thumb-04-big.jpg" /></a>
+							<div class="info">
+								U.S. Polo Assn. Full Sleeve Plain T-shirts for Men
+								<div class="break">
+									<br>
+								</div>
+								<div class="amount">$120.00</div>
+							</div>
+							<div class="break">
+								<br>
+							</div>
+						</div>
+
+						<div class="col-sm-4 col-xs-12">
+							<a href=""><img src="images\new-thumb-05-big.jpg" /></a>
+							<div class="info">
+								U.S. Polo Assn. Full Sleeve Plain T-shirts for Men
+								<div class="break">
+									<br>
+								</div>
+								<div class="amount">$120.00</div>
+							</div>
+							<div class="break">
+								<br>
+							</div>
+						</div>
+
+						<div class="col-sm-4 col-xs-12">
+							<a href=""><img src="images\new-thumb-06-big.jpg"></a>
+							<div class="info">
+								U.S. Polo Assn. Full Sleeve Plain T-shirts for Men
+								<div class="break">
+									<br>
+								</div>
+								<div class="amount">$120.00</div>
+							</div>
+							<div class="break">
+								<br>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4 col-xs-12">
+							<a href=""><img src="images\new-thumb-07-big.jpg" /></a>
+							<div class="info">
+								U.S. Polo Assn. Full Sleeve Plain T-shirts for Men
+								<div class="break">
+									<br>
+								</div>
+								<div class="amount">$120.00</div>
+							</div>
+							<div class="break">
+								<br>
+							</div>
+						</div>
+
+						<div class="col-sm-4 col-xs-12">
+							<a href=""><img src="images\new-thumb-01-big.jpg" /></a>
+							<div class="info">
+								U.S. Polo Assn. Full Sleeve Plain T-shirts for Men
+								<div class="break">
+									<br>
+								</div>
+								<div class="amount">$120.00</div>
+							</div>
+							<div class="break">
+								<br>
+							</div>
+						</div>
+
+						<div class="col-sm-4 col-xs-12">
+							<a href=""><img src="images\new-thumb-01-big.jpg"></a>
+							<div class="info">
+								U.S. Polo Assn. Full Sleeve Plain T-shirts for Men
+								<div class="break">
+									<br>
+								</div>
+								<div class="amount">$120.00</div>
+							</div>
+							<div class="break">
+								<br>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4 col-xs-12">
+							<a href=""><img src="images\new-thumb-02-big.jpg" /></a>
+							<div class="info">
+								U.S. Polo Assn. Full Sleeve Plain T-shirts for Men
+								<div class="break">
+									<br>
+								</div>
+								<div class="amount">$120.00</div>
+							</div>
+							<div class="break">
+								<br>
+							</div>
+						</div>
+
+						<div class="col-sm-4 col-xs-12">
+							<a href=""><img src="images\new-thumb-01-big.jpg" /></a>
+							<div class="info">
+								U.S. Polo Assn. Full Sleeve Plain T-shirts for Men
+								<div class="break">
+									<br>
+								</div>
+								<div class="amount">$120.00</div>
+							</div>
+							<div class="break">
+								<br>
+							</div>
+						</div>
+
+						<div class="col-sm-4 col-xs-12">
+							<a href=""><img src="images\new-thumb-04-big.jpg"></a>
+							<div class="info">
+								U.S. Polo Assn. Full Sleeve Plain T-shirts for Men
+								<div class="break">
+									<br>
+								</div>
+								<div class="amount">$120.00</div>
+							</div>
+							<div class="break">
+								<br>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-9 col-xs-12">
+							<div class="Wrapper-Moreproducts">
+								<button type="button" class="btn More-Products">More
+									Products</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container-fluid">
+		<div class="footer">
+			<div class="container">
+				<form class="form-inline text-center">
+					<div class="form-group">
+						<label for="email">Subscribe for Newsletter</label>
+					</div>
+					<div class="form-group">
+						<input type="email" class="form-control" id="email"
+							placeholder="Enter your email address">
+					</div>
+					<button type="submit" class="btn signup">SIGN UP</button>
+				</form>
+				<div class="break">
+					<br>
+				</div>
+				<div class="break">
+					<br>
+				</div>
+
+				<div class="row">
+
+					<div class="col-xs-12">
+						<div class="footer-form">
+							<ul type="none">
+								<div class="list-inline">
+									<li><a href="">Home</a></li>
+
+									<li><a href="">About us</a></li>
+
+									<li><a href="">Register</a></li>
+
+									<li><a href="">Contact us</a></li>
+
+								</div>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="break">
+				<br>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-xs-12">
+					<p>&#160 2017 eShopper Online Store.All Rights Reserved.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog"
+		aria-labelledby="mySmallModalLabel">
+
+		<div class="container">
+			<div class="modal-dialog modal-sm" role="document">
+
+				<div class="modal-content">
+
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="col-xs-10">
+								<h4 class="modal-title">eShopper Login</h4>
+							</div>
+							<div class="col-xs-2">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+							<form>
+								<div class="col-xs-12">
+									<div class="form-group">
+										<label>Username</label> <input type="text"
+											class="form-control" id="login_username"
+											placeholder="Please Enter your username" name="username">
+										<p id="login_unerror"></p>
+									</div>
+								</div>
+								<div class="col-xs-12">
+									<div class="form-group">
+										<label class="control-label" for="pwd">Password</label> <input
+											type="password" class="form-control" id="login_pwd"
+											placeholder="Enter your Password" name="pwd">
+										<p id="login_pwderror"></p>
+									</div>
+								</div>
+								<div class="col-xs-12">
+									<div class="form-group has-error">
+										<label class="control-label" for="incpwd">Password</label> <input
+											type="password" class="form-control" id="login_incpwd"
+											placeholder="Incorrect Password" name="incpwd">
+										<p id="login_incpwderror"></p>
+									</div>
+								</div>
+								<div class="col-xs-5">
+									<button type="button" class="btn btn-danger"
+										onclick="login_validation()">Login</button>
+								</div>
+								<div class="col-xs-7">
+									<div class="not-a-member">
+										Not a Member? <a href="">Register</a>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="gotop"></div>
+	<script src="js/myscript.js"></script>
+</body>
+</html>

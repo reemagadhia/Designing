@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="css/mystyle.css" />
+<link rel="stylesheet" href="css/jquery.rateyo.css" />
+<link href="css/jquery.easy_slides.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/media.css" />
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/myjquery.js"></script>
+<script src="js/jquery.rateyo.js"></script>
+<script src="js/jquery.gotop.js"></script>
+<script src="js/jquery.easy_slides.js"></script>
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-1">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle"
+									data-toggle="collapse" data-target="#myNavbar">
+									<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+										class="icon-bar"></span>
+								</button>
+								<div class="logo-image">
+									<img src="images\logo.svg">
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-5 ">
+							<div class="main-menu">
+								<div class="collapse navbar-collapse" id="myNavbar">
+									<ul class="nav navbar-nav">
+
+										<li><a href="#">HOME</a></li>
+										<li><div class="dropdown">
+												<a href="#">MEN</a>
+												<div class="dropdown-content">
+													<ul>
+														<li><a href="#">Jeans</a></li>
+														<li><a href="#">Shirts</a></li>
+														<li><a href="#">T-shirts</a></li>
+														<li><a href="#">Chinos</a></li>
+														<li><a href="#">Blazers</a></li>
+														<li><a href="#">Night Wear</a></li>
+													</ul>
+												</div>
+											</div></li>
+										<li><a href="#">WOMEN</a></li>
+										<li><a href="#">KIDS</a></li>
+										<li><a href="#">ACCESSORIES</a></li>
+									</ul>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="side-menu">
+								<div class="col-sm-12">
+									<ul class="nav navbar-nav navbar-right">
+										<div class="list-inline">
+											<li class="list-inline-item"><a id="menu-login"
+												data-toggle="modal" href="#"
+												data-target=".bs-example-modal-sm">Login </a></li>
+											<li class="list-inline-item">
+												<div id="menu-cart" class="menu-cart">
+													<a href="#dLabel" data-toggle="dropdown"
+														aria-haspopup="true"><div class="sprite-cart"></div></a>
+
+													<ul class="dropdown-menu" aria-labelledby="dLabel">
+														Recently added item(s)
+														<li>
+															<div class="row">
+																<div class="col-xs-3">
+																	<img src="images\new-thumb-01.jpg">
+																</div>
+																<div class="col-xs-7">
+																	U.S. Polo Assn. Full Sleeve Plain T-shirts<br>
+																	<div class="amount">$120.00</div>
+																	<small>Qty:1<br>Size:Medium/Large
+																	</small>
+																</div>
+																<div class="col-xs-1">
+																	<div class="edit-svg">
+																		<img src="images\edit.svg" />
+																	</div>
+																</div>
+																<div class="col-xs-1">
+																	<div class="cross-svg">
+																		<img src="images\cross.svg" />
+																	</div>
+																</div>
+															</div>
+														</li>
+
+														<li>
+															<div class="row">
+																<div class="col-xs-3">
+																	<img src="images\new-thumb-02.jpg">
+																</div>
+																<div class="col-xs-7">
+																	U.S. Polo Assn. Full Sleeve Plain T-shirts<br>
+																	<div class="amount">$120.00</div>
+																	<small>Qty:1<br>Size:Medium/Large
+																	</small>
+																</div>
+																<div class="col-xs-1">
+																	<div class="edit-svg">
+																		<img src="images\edit.svg" />
+																	</div>
+																</div>
+																<div class="col-xs-1">
+																	<div class="cross-svg">
+																		<img src="images\cross.svg" />
+																	</div>
+																</div>
+															</div>
+														</li>
+														<li><div class="col-xs-6">Cart Subtotal:</div>
+															<div class="col-xs-6">
+																<div class="amount">$168.00</div>
+															</div></li>
+														<li><div class="buttons">
+																<button type="submit" class="btn btn-danger">View
+																	Cart</button>
+															</div></li>
+													</ul>
+												</div>
+											</li>
+											<li class="list-inline-item"><div class="menu-search">
+													<a href="#"><input type="search" id="search">
+														<div class="search-image"></div></a>
+												</div></li>
+										</div>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="top">
+					<div class="container">
+						<h2>Register</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<nav aria-label="breadcrumb" class="breadcrumb_bgcolor">
+		<ol class="breadcrumb container">
+			<li class="breadcrumb-item"><a href="#" class="breadcrumb_color">Home</a></li>
+			<li class="breadcrumb-item active" aria-current="page">Update
+				Profile</li>
+		</ol>
+	</nav>
+	<div class="container">
+		<div class="Register-head">
+			<div class="row">
+				<div class="col-xs-12">
+					<h2>New Customers</h2>
+				</div>
+				<div class="col-xs-12">
+					<p>By creating an account with our store, you will be able to
+						move through the checkout process faster, store multiple shipping
+						addresses, view and track your orders in your account and more.</p>
+				</div>
+			</div>
+		</div>
+		<div class="Register">
+			<form class="border-class" id="register_form">
+
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="col-sm-6 col-xs-12">
+
+							<div class="form-group">
+								<label>Username</label> <input type="text" class="form-control"
+									id="username" placeholder="Please Enter your username"
+									name="username" onblur="username_validation()">
+								<p id="unerror"></p>
+							</div>
+						</div>
+						<div class="col-sm-6 col-xs-12">
+							<div class="form-group">
+								<label><br>Gender</label>
+								<div class="radio">
+									<label class="radio-inline"><input type="radio"
+										name="optradio">Male</label> <label class="radio-inline"><input
+										type="radio" name="optradio">Female</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12">
+						<div class="col-sm-6 col-xs-12">
+							<div class="form-group has-error">
+								<label class="control-label" for="pwd">Password</label> <input
+									type="password" class="form-control" id="pwd"
+									placeholder="Incorrect Password" name="pwd"
+									onblur="password_validation();">
+								<p id="pwderror"></p>
+							</div>
+
+						</div>
+						<div class="col-sm-6 col-xs-12">
+							<div class="form-group">
+								<label>Email</label> <input type="text" class="form-control"
+									id="emailid" placeholder="Please enter valid email"
+									name="email1" onblur="email_validation();">
+								<p class="emerror" id="emerror"></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12">
+						<div class="col-sm-6 col-xs-12">
+							<div class="form-group">
+								<label>First Name</label> <input type="text"
+									class="form-control" id="firstname"
+									placeholder="Please Enter your first name" name="firstname"
+									onblur="firstname_validation();">
+								<p id="fnerror"></p>
+							</div>
+						</div>
+						<div class="col-sm-6 col-xs-12">
+							<div class="form-group">
+								<label>Mobile No.</label> <input type="text"
+									class="form-control" id="mobileno"
+									placeholder="Please enter your mobile no." name="mobileno"
+									onblur="mobile_validation();">
+								<p id="moerror"></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12">
+						<div class="col-sm-6 col-xs-12">
+							<div class="form-group">
+								<label>Last Name</label> <input type="text" class="form-control"
+									id="lastname" placeholder="Please Enter your last name"
+									name="lastname">
+							</div>
+						</div>
+						<div class="col-sm-6 col-xs-12">
+							<div class="form-group">
+								<label>Phone</label> <input type="text" class="form-control"
+									id="phone" placeholder="Please enter your phone" name="phone"
+									onblur="phone_validation();">
+								<p id="pherror"></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12">
+						<label>Interests</label>
+						<div class="checkbox">
+							<label><input type="checkbox" id="selectall"
+								name="Interests" value="" onclick="selectAll();">Select
+								All</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" id="option1"
+								name="Interests" onclick="unselectall()" value="">Option
+								1</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" id="option2"
+								name="Interests" onclick="unselectall()" value="">Option
+								2</label>
+						</div>
+						<div class="checkbox">
+							<label><input type="checkbox" id="option3"
+								name="Interests" onclick="unselectall()" value="">Option
+								3</label>
+						</div>
+						<div class="checkbox">
+							<label class="form-inline"><input type="checkbox"
+								name="Interests" id="otheroption4" value=""
+								onclick="showtextbox();unselectall();">Other <input
+								type="text" id="othertext" class="form-control" width="50"></label>
+						</div>
+					</div>
+
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-sm-6 col-xs-12">
+						<div class="checkbox">
+							<label><input type="checkbox" id="tandc" name="tandc" onclick="terms_condition();">I
+								agree with Terms and Conditions.</label>
+						</div>
+					</div>
+					<div class="col-sm-6 col-xs-12">
+						<div class="buttons">
+							<button type="button" id="button-submit" class="btn btn-danger" onclick="profile_validation()" value="Submit" disabled="true">Submit</button>
+								<input type="reset" class="btn btn-clear" value="Clear">
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="footer">
+			<div class="container">
+				<form class="form-inline text-center">
+					<div class="form-group">
+						<label for="email">Subscribe for Newsletter</label>
+					</div>
+					<div class="form-group">
+						<input type="email" class="form-control" id="email"
+							placeholder="Enter your email address">
+					</div>
+					<button type="submit" class="btn signup">SIGN UP</button>
+				</form>
+				<div class="break">
+					<br>
+				</div>
+				<div class="break">
+					<br>
+				</div>
+
+				<div class="row">
+
+					<div class="col-xs-12">
+						<div class="footer-form">
+							<ul type="none">
+								<div class="list-inline">
+									<li><a href="">Home</a></li>
+
+									<li><a href="">About us</a></li>
+
+									<li><a href="">Register</a></li>
+
+									<li><a href="">Contact us</a></li>
+
+								</div>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br />
+			<hr />
+
+			<div class="row">
+				<div class="col-xs-12">
+					<p>&#160 2017 eShopper Online Store.All Rights Reserved.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog"
+		aria-labelledby="mySmallModalLabel">
+
+		<div class="container">
+			<div class="modal-dialog modal-sm" role="document">
+
+				<div class="modal-content">
+
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="col-xs-10">
+								<h4 class="modal-title">eShopper Login</h4>
+							</div>
+							<div class="col-xs-2">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+							<form>
+								<div class="col-xs-12">
+									<div class="form-group">
+										<label>Username</label> <input type="text"
+											class="form-control" id="login_username"
+											placeholder="Please Enter your username" name="username">
+										<p id="login_unerror"></p>
+									</div>
+								</div>
+								<div class="col-xs-12">
+									<div class="form-group">
+										<label class="control-label" for="pwd">Password</label> <input
+											type="password" class="form-control" id="login_pwd"
+											placeholder="Enter your Password" name="pwd">
+										<p id="login_pwderror"></p>
+									</div>
+								</div>
+								<div class="col-xs-12">
+									<div class="form-group has-error">
+										<label class="control-label" for="incpwd">Password</label> <input
+											type="password" class="form-control" id="login_incpwd"
+											placeholder="Incorrect Password" name="incpwd">
+										<p id="login_incpwderror"></p>
+									</div>
+								</div>
+								<div class="col-xs-5">
+									<button type="button" class="btn btn-danger"
+										onclick="login_validation()">Login</button>
+								</div>
+								<div class="col-xs-7">
+									<div class="not-a-member">
+										Not a Member? <a href="">Register</a>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="gotop"></div>
+	<script src="js/myscript.js"></script>
+</body>
+</html>

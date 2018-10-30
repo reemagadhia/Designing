@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="css/mystyle.css" />
+<link rel="stylesheet" href="css/jquery.rateyo.css" />
+<link href="css/jquery.easy_slides.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/media.css" />
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/myjquery.js"></script>
+<script src="js/myscript.js"></script>
+<script src="js/jquery.rateyo.js"></script>
+<script src="js/jquery.gotop.js"></script>
+<script src="js/jquery.easy_slides.js"></script>
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-1">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle"
+									data-toggle="collapse" data-target="#myNavbar">
+									<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+										class="icon-bar"></span>
+								</button>
+								<div class="logo-image">
+									<img src="images\logo.svg">
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-5 ">
+							<div class="main-menu">
+								<div class="collapse navbar-collapse" id="myNavbar">
+									<ul class="nav navbar-nav">
+
+										<li><a href="#">HOME</a></li>
+										<li><div class="dropdown">
+												<a href="#">MEN</a>
+												<div class="dropdown-content">
+													<ul>
+														<li><a href="#">Jeans</a></li>
+														<li><a href="#">Shirts</a></li>
+														<li><a href="#">T-shirts</a></li>
+														<li><a href="#">Chinos</a></li>
+														<li><a href="#">Blazers</a></li>
+														<li><a href="#">Night Wear</a></li>
+													</ul>
+												</div>
+											</div></li>
+										<li><a href="#">WOMEN</a></li>
+										<li><a href="#">KIDS</a></li>
+										<li><a href="#">ACCESSORIES</a></li>
+									</ul>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="side-menu">
+								<div class="col-sm-12">
+									<ul class="nav navbar-nav navbar-right">
+										<div class="list-inline">
+											<li class="list-inline-item"><a id="menu-login"
+												data-toggle="modal" href="#"
+												data-target=".bs-example-modal-sm">Login </a></li>
+											<li class="list-inline-item">
+												<div id="menu-cart" class="menu-cart">
+													<a href="#dLabel" data-toggle="dropdown"
+														aria-haspopup="true"><div class="sprite-cart"></div></a>
+
+													<ul class="dropdown-menu" aria-labelledby="dLabel">
+														Recently added item(s)
+														<li>
+															<div class="row">
+																<div class="col-xs-3">
+																	<img src="images\new-thumb-01.jpg">
+																</div>
+																<div class="col-xs-7">
+																	U.S. Polo Assn. Full Sleeve Plain T-shirts<br>
+																	<div class="amount">$120.00</div>
+																	<small>Qty:1<br>Size:Medium/Large
+																	</small>
+																</div>
+																<div class="col-xs-1">
+																	<div class="edit-svg">
+																		<img src="images\edit.svg" />
+																	</div>
+																</div>
+																<div class="col-xs-1">
+																	<div class="cross-svg">
+																		<img src="images\cross.svg" />
+																	</div>
+																</div>
+															</div>
+														</li>
+
+														<li>
+															<div class="row">
+																<div class="col-xs-3">
+																	<img src="images\new-thumb-02.jpg">
+																</div>
+																<div class="col-xs-7">
+																	U.S. Polo Assn. Full Sleeve Plain T-shirts<br>
+																	<div class="amount">$120.00</div>
+																	<small>Qty:1<br>Size:Medium/Large
+																	</small>
+																</div>
+																<div class="col-xs-1">
+																	<div class="edit-svg">
+																		<img src="images\edit.svg" />
+																	</div>
+																</div>
+																<div class="col-xs-1">
+																	<div class="cross-svg">
+																		<img src="images\cross.svg" />
+																	</div>
+																</div>
+															</div>
+														</li>
+														<li><div class="col-xs-6">Cart Subtotal:</div>
+															<div class="col-xs-6">
+																<div class="amount">$168.00</div>
+															</div></li>
+														<li><div class="buttons">
+																<button type="submit" class="btn btn-danger">View
+																	Cart</button>
+															</div></li>
+													</ul>
+												</div>
+											</li>
+											<li class="list-inline-item"><div class="menu-search">
+													<a href="#"><input type="search" id="search">
+														<div class="search-image"></div></a>
+												</div></li>
+										</div>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12">
+				<div id="banner" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#banner" data-slide-to="0" class="active"></li>
+						<li data-target="#banner" data-slide-to="1"></li>
+						<li data-target="#banner" data-slide-to="2"></li>
+					</ol>
+
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<img src="images\banner.jpg" alt="banner">
+						</div>
+						<div class="item">
+							<img src="images\banner1.jpg" alt="banner1">
+						</div>
+						<div class="item">
+							<img src="images\banner2.jpg" alt="banner2">
+						</div>
+					</div>
+
+					<a class="left carousel-control" href="#banner" role="button"
+						data-slide="prev">
+						<div class="banner_arrow_pre">
+							<img src="images\pre-arrow.svg">
+						</div>
+					</a> <a class="right carousel-control" href="#banner" role="button"
+						data-slide="next">
+						<div class="banner_arrow_next">
+							<img src="images\next-arrow.svg">
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="offer-contents">
+		<br>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 col-xs-12">
+					<div class="col-md-2 col-xs-3">
+						<a href="#"><div class="sprite-delivery"></div></a>
+					</div>
+					<div class="col-md-10 col-xs-9">
+						<div class="offers">
+							<b>Free Delivery Worldwide</b>
+						</div>
+						At vero eos et accusamus et iusto odio
+					</div>
+				</div>
+				<div class="col-sm-4 col-xs-12">
+					<div class="col-md-2 col-xs-3">
+						<a href="#"><div class="sprite-return"></div></a>
+					</div>
+					<div class="col-md-10 col-xs-9">
+						<div class="offers">
+							<b>Free Return For 90 Day</b>
+						</div>
+						At vero eos et accusamus et iusto odio
+					</div>
+				</div>
+				<div class="col-sm-4 col-xs-12">
+					<div class="col-md-2 col-xs-3">
+						<a href="#"><div class="sprite-gift"></div></a>
+					</div>
+					<div class="col-md-10 col-xs-9">
+						<div class="offers">
+							<b>Discount on Order-Gift</b>
+						</div>
+						At vero eos et accusamus et iusto odio
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+	</div>
+
+	<div class="container">
+		<div class="Heading">
+			<div class="row">
+				<div class="col-xs-12">Trending Products</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="product-images">
+			<div class="row">
+				<div class="col-xs-3">
+					<a href=""><img src="images\new-thumb-01-big.jpg" />
+						<button type="button" class="btn btn-CART">ADD TO CART</button></a>
+					<div class="info">
+						U.S. Polo Assn. Full Sleeve Plain T-shirts for Men
+						<div class="break">
+							<br>
+						</div>
+						<div class="amount">$120.00</div>
+					</div>
+					<div class="break">
+						<br>
+					</div>
+				</div>
+
+				<div class="col-xs-3">
+					<a href=""><img src="images\new-thumb-02-big.jpg" />
+					<button type="button" class="btn btn-CART">ADD TO CART</button></a>
+					<div class="info">
+						U.S. Polo Assn. Full Sleeve Plain T-shirts for Men
+						<div class="break">
+							<br>
+						</div>
+						<div class="amount">$120.00</div>
+					</div>
+					<div class="break">
+						<br>
+					</div>
+				</div>
+
+				<div class="col-xs-3">
+					<a href=""><img src="images\new-thumb-03-big.jpg">
+					<button type="button" class="btn btn-CART">ADD TO CART</button></a>
+					<div class="info">
+						U.S. Polo Assn. Full Sleeve Plain T-shirts for Men
+						<div class="break">
+							<br>
+						</div>
+						<div class="amount">$120.00</div>
+					</div>
+					<div class="break">
+						<br>
+					</div>
+				</div>
+
+				<div class="col-xs-3">
+					<a href=""><img src="images\new-thumb-04-big.jpg">
+					<button type="button" class="btn btn-CART">ADD TO CART</button></a>
+					<div class="info">
+						U.S. Polo Assn. Full Sleeve Plain T-shirts for Men
+						<div class="break">
+							<br>
+						</div>
+						<div class="amount">$120.00</div>
+					</div>
+					<div class="break">
+						<br>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-3">
+					<a href=""><img src="images\new-thumb-05-big.jpg">
+					<button type="button" class="btn btn-CART">ADD TO CART</button></a>
+					<div class="info">
+						U.S. Polo Assn. Full Sleeve Plain T-shirts for Men
+						<div class="break">
+							<br>
+						</div>
+						<div class="amount">$120.00</div>
+					</div>
+					<div class="break">
+						<br>
+					</div>
+				</div>
+
+				<div class="col-xs-3">
+					<a href=""><img src="images\new-thumb-06-big.jpg">
+					<button type="button" class="btn btn-CART">ADD TO CART</button></a>
+					<div class="info">
+						U.S. Polo Assn. Full Sleeve Plain T-shirts for Men
+						<div class="break">
+							<br>
+						</div>
+						<div class="amount">$120.00</div>
+					</div>
+					<div class="break">
+						<br>
+					</div>
+				</div>
+
+				<div class="col-xs-3">
+					<a href=""><img src="images\new-thumb-07-big.jpg">
+					<button type="button" class="btn btn-CART">ADD TO CART</button></a>
+					<div class="info">
+						U.S. Polo Assn. Full Sleeve Plain T-shirts for Men
+						<div class="break">
+							<br>
+						</div>
+						<div class="amount">$120.00</div>
+					</div>
+					<div class="break">
+						<br>
+					</div>
+				</div>
+
+				<div class="col-xs-3">
+					<a href=""><img src="images\new-thumb-08-big.jpg">
+					<button type="button" class="btn btn-CART">ADD TO CART</button></a>
+					<div class="info">
+						U.S. Polo Assn. Full Sleeve Plain T-shirts for Men
+						<div class="break">
+							<br>
+						</div>
+						<div class="amount">$120.00</div>
+					</div>
+					<div class="break">
+						<br>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="break">
+		<br>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="Wrapper-Moreproducts">
+					<button type="button" class="btn More-Products">More
+						Products</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="bottom">
+					<div class="container">
+						<p>
+							<b>GET THE</b> LATEST<br>
+							<b>WOMENS</b> FASHION
+						</p>
+						<br>
+						<button type="button" class="btn women-collection">Get
+							Exclusive Collection For Women</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="footer">
+			<div class="container">
+				<form class="form-inline text-center">
+					<div class="form-group">
+						<label for="email">Subscribe for Newsletter</label>
+					</div>
+					<div class="form-group">
+						<input type="email" class="form-control" id="email"
+							placeholder="Enter your email address">
+					</div>
+					<button type="submit" class="btn signup">SIGN UP</button>
+				</form>
+				<div class="break">
+					<br>
+				</div>
+				<div class="break">
+					<br>
+				</div>
+
+				<div class="row">
+
+					<div class="col-sm-12">
+						<div class="footer-form">
+							<ul type="none">
+								<div class="list-inline">
+									<li><a href="">Home</a></li>
+
+									<li><a href="">About us</a></li>
+
+									<li><a href="">Register</a></li>
+
+									<li><a href="">Contact us</a></li>
+
+								</div>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="break">
+				<br>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-sm-12">
+					<p>&#160 2017 eShopper Online Store.All Rights Reserved.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog"
+		aria-labelledby="mySmallModalLabel">
+
+		<div class="container">
+			<div class="modal-dialog modal-sm" role="document">
+
+				<div class="modal-content">
+
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="col-xs-10">
+								<h4 class="modal-title">eShopper Login</h4>
+							</div>
+							<div class="col-xs-2">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+							<form>
+								<div class="col-xs-12">
+									<div class="form-group">
+										<label>Username</label> <input type="text"
+											class="form-control" id="login_username"
+											placeholder="Please Enter your username" name="username">
+										<p id="login_unerror"></p>
+									</div>
+								</div>
+								<div class="col-xs-12">
+									<div class="form-group">
+										<label class="control-label" for="pwd">Password</label> <input
+											type="password" class="form-control" id="login_pwd"
+											placeholder="Enter your Password" name="pwd">
+										<p id="login_pwderror"></p>
+									</div>
+								</div>
+								<div class="col-xs-12">
+									<div class="form-group has-error">
+										<label class="control-label" for="incpwd">Password</label> <input
+											type="password" class="form-control" id="login_incpwd"
+											placeholder="Incorrect Password" name="incpwd">
+										<p id="login_incpwderror"></p>
+									</div>
+								</div>
+								<div class="col-xs-5">
+									<button type="button" class="btn btn-danger"
+										onclick="login_validation()">Login</button>
+								</div>
+								<div class="col-xs-7">
+									<div class="not-a-member">
+										Not a Member? <a href="">Register</a>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="gotop"></div>
+	<script src="js/myscript.js"></script>
+</body>
+</html>

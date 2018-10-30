@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="css/mystyle.css" />
+<link rel="stylesheet" href="css/jquery.rateyo.css"/>
+<link href="css/jquery.easy_slides.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/media.css" />
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/myjquery.js"></script>
+<script src="js/jquery.rateyo.js"></script>
+<script src="js/jquery.gotop.js"></script>
+<script src="js/jquery.easy_slides.js"></script>
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-1">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle"
+									data-toggle="collapse" data-target="#myNavbar">
+									<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+										class="icon-bar"></span>
+								</button>
+								<div class="logo-image">
+									<img src="images\logo.svg">
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-5 col-xs-12">
+							<div class="main-menu">
+								<div class="collapse navbar-collapse" id="myNavbar">
+									<ul class="nav navbar-nav">
+
+										<li><a href="#">HOME</a></li>
+										<li><div class="dropdown">
+												<a href="#">MEN</a>
+													<div class="dropdown-content">
+														<ul>
+															<li><a href="#">Jeans</a></li>
+															<li><a href="#">Shirts</a></li>
+															<li><a href="#">T-shirts</a></li>
+															<li><a href="#">Chinos</a></li>
+															<li><a href="#">Blazers</a></li>
+															<li><a href="#">Night Wear</a></li>
+														</ul>
+													</div>
+											</div></li>
+										<li><a href="#">WOMEN</a></li>
+										<li><a href="#">KIDS</a></li>
+										<li><a href="#">ACCESSORIES</a></li>
+									</ul>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-xs-12">
+							<div class="side-menu">
+								<div class="col-sm-12 col-xs-12">
+									<ul class="nav navbar-nav navbar-right">
+										<div class="list-inline">
+											<li class="list-inline-item" id="menu-welcome">Welcome</li>
+											<li class="list-inline-item"><a id="menu-profile"
+												href="#">| Profile</a></li>
+											<li class="list-inline-item"><a href="#"
+												id="menu-logout">| Logout |</a></li>
+											<li class="list-inline-item">
+												<div id="menu-cart" class="menu-cart">
+													<a href="#dLabel" data-toggle="dropdown"
+														aria-haspopup="true"><div class="sprite-cart"></div></a>
+
+													<ul class="dropdown-menu" aria-labelledby="dLabel">
+														Recently added item(s)
+														<li>
+															<div class="row">
+																<div class="col-xs-3">
+																	<img src="images\new-thumb-01.jpg">
+																</div>
+																<div class="col-xs-7">
+																	U.S. Polo Assn. Full Sleeve Plain T-shirts<br>
+																	<div class="amount">$120.00</div>
+																	<small>Qty:1<br>Size:Medium/Large
+																	</small>
+																</div>
+																<div class="col-xs-1">
+																	<div class="edit-svg">
+																		<img src="images\edit.svg" />
+																	</div>
+																</div>
+																<div class="col-xs-1">
+																	<div class="cross-svg">
+																		<img src="images\cross.svg" />
+																	</div>
+																</div>
+															</div>
+														</li>
+
+														<li>
+															<div class="row">
+																<div class="col-xs-3">
+																	<img src="images\new-thumb-02.jpg">
+																</div>
+																<div class="col-xs-7">
+																	U.S. Polo Assn. Full Sleeve Plain T-shirts<br>
+																	<div class="amount">$120.00</div>
+																	<small>Qty:1<br>Size:Medium/Large
+																	</small>
+																</div>
+																<div class="col-xs-1">
+																	<div class="edit-svg">
+																		<img src="images\edit.svg" />
+																	</div>
+																</div>
+																<div class="col-xs-1">
+																	<div class="cross-svg">
+																		<img src="images\cross.svg" />
+																	</div>
+																</div>
+															</div>
+														</li>
+														<li><div class="col-xs-6">Cart Subtotal:</div>
+															<div class="col-xs-6">
+																<div class="amount">$168.00</div>
+															</div></li>
+														<li><div class="buttons">
+																<button type="submit" class="btn btn-danger">View
+																	Cart</button>
+															</div></li>
+													</ul>
+												</div>
+											</li>
+											<li class="list-inline-item"><div class="menu-search">
+													<a href="#"><input type="search" id="search">
+														<div class="search-image"></div></a>
+												</div></li>
+										</div>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+<div class="container-fluid">
+	<div class="row">
+	<div class="col-xs-12">
+	<div class="top">
+	<div class="container">
+		<h2>Shopping Cart</h2>
+	</div>		
+	</div>
+	</div>
+	</div>
+</div>
+
+<nav aria-label="breadcrumb" class="breadcrumb_bgcolor">
+   <ol class="breadcrumb container">
+       <li class="breadcrumb-item"><a href="#" class="breadcrumb_color">Home</a></li>
+       <li class="breadcrumb-item active" aria-current="page">Update Profile</li>
+   </ol>
+</nav>
+
+<div class="Shopping-Cart">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="alert alert-success">
+					<div class="row">
+						<div class="col-xs-1">
+							<img src="images\success.svg"/>
+						</div>
+						<div class="col-xs-10">
+							<p>U.S. Polo Assn. Full Sleeve Plain T-shirts for Men was added to your shopping cart.</p>
+						</div>
+						<div class="col-xs-1">
+						<div class="cross-svg">
+							<img src="images\cross.svg"/>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="alert alert-info">
+					<div class="row">
+						<div class="col-xs-1">
+							<img src="images\info.svg"/>
+						</div>
+						<div class="col-xs-10">
+							<p>U.S. Polo Assn. Full Sleeve Plain T-shirts for Men was added to your shopping cart.</p>
+						</div>
+						<div class="col-xs-1">
+						<div class="cross-svg">
+							<img src="images\cross.svg"/>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="alert alert-warning">
+					<div class="row">
+						<div class="col-xs-1">
+							<img src="images\warning.svg"/>
+						</div>
+						<div class="col-xs-10">
+							<p>U.S. Polo Assn. Full Sleeve Plain T-shirts for Men was added to your shopping cart.</p>
+						</div>
+						<div class="col-xs-1">
+						<div class="cross-svg">
+							<img src="images\cross.svg"/>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="alert alert-danger">
+					<div class="row">
+						<div class="col-xs-1">
+							<img src="images\error.svg"/>
+						</div>
+						<div class="col-xs-10">
+							<p>U.S. Polo Assn. Full Sleeve Plain T-shirts for Men was added to your shopping cart.</p>
+						</div>
+						<div class="col-xs-1">
+						<div class="cross-svg">
+							<img src="images\cross.svg"/>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<div class="col-xs-12">
+		<div class="table-responsive">
+			<table class="table">
+				<thead>
+					<tr class="active">
+						<th></th>
+						<th>Product Name</th>
+						<th>Unit Price</th>
+						<th>Qty</th>
+						<th>Subtotal</th>
+						<th><th>
+					</tr>
+				</thead>
+				<tfoot>
+					<tr class="active">
+						<td colspan="6">
+							<button type="button" class="btn btn-continue">Continue Shopping</button>
+							<div class="cart-buttons">
+								<button type="reset" class="btn btn-clear" onclick="clear_cart()">Clear Shopping Cart</button>
+								<button type="button" class="btn btn-clear" onclick="total_cart()">Update Shopping Cart</button>
+							</div>
+						</td>
+					</tr>
+				</tfoot>
+					<tbody id="productdata">
+					</tbody>
+			</table>
+		</div>
+		</div>
+	</div>
+ 
+<div class="row">
+	<div class="col-sm-5 col-xs-12"> 
+	<form>
+		<div class="form-caption">Estimate Shipping and Tax</div><br>
+		<p>Enter your Destination to get a shipping estimate.<br></p>
+		<div class="form-group">
+			<label>country</label>
+			<input type="text" class="form-control" id="country" value="India" name="state">
+		</div>
+		<div class="form-group">
+			<label>State/Province</label>
+			<input type="text" class="form-control" id="state" placeholder="State/Province" name="state">
+		</div>
+		<div class="form-group">
+			<label>Zip/Postal Code</label>
+			<input type="text" class="form-control" id="zip" placeholder="Zip/Postal Code" name="zip">
+		</div>
+	</form>
+	</div>
+	<div class="col-sm-7 col-xs-12">
+	<div class="Amount-table">
+	<table class="table">
+		<tfoot>
+			<tr class="active">
+				  <td colspan="3">
+				  Checkout with Multiple Addresses
+				  </td>
+			</tr>
+		</tfoot>
+		<tbody>
+		  <tr>
+			<td></td>
+			<td>Subtotal</td>
+			<td><p id="subtotal"></p></td>
+		  </tr>
+		  <tr>
+			<td></td>
+			<td><b>Total</b></td>
+			<td><div class="amount"><p id="total"></p></div></td>
+		  </tr>
+		  <tr></tr>
+		  <tr>
+			<td colspan="3"><div class="update-button"><button type="button" class="btn btn-danger" onclick="confirm_purchase()">Update Shopping Cart</button></div></td>
+		  </tr>
+		</tbody>
+	</table>
+	</div>
+	</div>
+</div>
+
+</div>
+</div>
+<div class="container-fluid">
+<div class="footer">
+		<div class="container">
+		 <form class="form-inline text-center">
+			<div class="form-group">
+				<label for="email">Subscribe for Newsletter</label>
+			</div>
+			<div class="form-group">
+				<input type="email" class="form-control" id="email" placeholder="Enter your Email Address">
+			</div>
+			<button type="submit" class="btn btn-signup">SIGN UP</button>
+		  </form>
+		  <div class="break"><br></div>
+		  <div class="break"><br></div>
+		
+		<div class="row">
+			
+			<div class="col-sm-12">
+			<div class="footer-form">
+			<ul type="none">
+			<div class="list-inline">
+			<li><a href="">Home</a></li>
+			
+			<li><a href="">About us</a></li>
+			
+			<li><a href="">Register</a></li>
+			
+			<li><a href="">Contact us</a></li>
+			
+			</div>
+			</ul>
+			</div>
+			</div>
+		</div>
+		</div>
+		<br/>
+		<hr/>
+		
+		<div class="row">
+			<div class="col-sm-12">
+				<p>&#160 2017 eShopper Online Store.All Rights Reserved.</p>
+			</div>
+		</div>
+		</div>
+	</div>
+<div id="gotop"></div>
+<script src="js/myscript.js"></script>
+</body>
+</html>
